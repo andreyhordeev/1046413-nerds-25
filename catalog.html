@@ -1,193 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Каталог товаров NЁRDS</title>
-		<meta charset="utf-8">
-		<link href="css/style.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	</head>
-	<body class="inner-page">
-		<header class="main-header">
-			<div class="container">
-				<div class="header-1 clearfix">
-					<div class="main-logo">
-						<img src="img/main-logo.png" alt="Веб-студия Nёrds" width="140" height="56">
-					</div>
-					<nav class="main-navigation">
-						<ul>
-							<li><a href="index.html">Студия</a></li>
-							<li><a href="#">Клиенты</a></li>
-							<li><a class="active" href="#">Магазин</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</nav>
-					<div class="user-block">
-						<a class="cart" href="#">Корзина</a>
-					</div>
+
+<head>
+	<title>Каталог товаров NЁRDS</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet'
+		type='text/css'>
+</head>
+
+<body class="inner-page">
+	<header class="main-header">
+		<div class="container">
+			<div class="header-1 clearfix">
+				<div class="main-logo">
+					<img src="img/main-logo.png" alt="Веб-студия Nёrds" width="140" height="56">
 				</div>
-				<div class="header-2">
-					<h1 class="header-title">Добро пожаловать в магазин<br> 
-											 готовых макетов</h1>
+				<nav class="main-navigation">
+					<ul>
+						<li><a href="index.html">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a class="active" href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="user-block">
+					<a class="cart" href="#">Корзина</a>
 				</div>
 			</div>
-		</header>
-		<main class="container clearfix">
-				<form class="filters" action="#" method="get">
-					<fieldset class="cost">
-						<legend class="filters-title">Стоимость:</legend>
-						<div class="cost-range">
-							<div class="min-range"></div>
-							<input type="range" name="cost-range" min="0" max="15000" step="100">
-							<div class="input-range"></div>
-							<div class="max-range"></div>
-						</div>
-						<p>ОТ<output name="cost-from">0</output>ДО<output name="cost-to">15000</output></p>
-					</fieldset>
-					<fieldset class="grid">
-						<legend class="filters-title">Сетка:</legend>
-						<ul class="grid-radio-list">
-							<li>
-								<input name="grid" type="radio" value="adaptive" id="grid-1">
-								<label for="grid-1">Адаптивная</label>
-							</li>
-							<li>
-								<input name="grid" type="radio" value="fixed" id="grid-2">
-								<label for="grid-2">Фиксированная</label>
-							</li>
-							<li>
-								<input name="grid" type="radio" value="rubber" id="grid-3">
-								<label for="grid-3">Резиновая</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="features">
-						<legend class="filters-title">Особенности:</legend>
-						<ul class="grid-features-list">
-							<li>
-								<input name="features" type="checkbox" value="slider" id="slider">
-								<label for="slider">Слайдер</label>
-							</li>
-							<li>
-								<input name="features" type="checkbox" value="features-block" id="features-block">
-								<label for="features-block">Блок преимуществ</label>
-							</li>
-							<li>
-								<input name="features" type="checkbox" value="news" id="news">
-								<label for="news">Новости</label>
-							</li>
-							<li>
-								<input name="features" type="checkbox" value="gallery" id="gallery">
-								<label for="gallery">Галерея</label>
-							</li>
-							<li>
-								<input name="features" type="checkbox" value="cart" id="cart">
-								<label for="cart">Корзина</label>
-							</li>
-						</ul>
-					</fieldset>
-						<button type="submit" name="show-filters" title="Показать">Показать</button>
-				</form>
-				<div class="items">
-					<div class="sort">
-						<h2 class="sort-title">Сортировать:</h2>
-						<ul class="sort-list">
-							<li>
-								<a class="sort-type" href="#">По цене</a>
-							</li>
-							<li>
-								<a class="sort-type" href="#">По типу</a>
-							</li>
-							<li>
-								<a class="sort-type" href="#">По функционалу</a>
-							</li>
-						</ul>
-						<span class="arrow arrow-up"></span>
-						<span class="arrow arrow-down"></span>
-					</div>
-					<div class="items-list clearfix">
-						<article class="item">
-							<div class="details">
-								<header>Aviator</header>
-								<p>Одностраничный макет с авторским дизайном</p>
-								<a class="btn" href="#">8000 р.</a>
-							</div>
-						</article>
-						<article class="item">
-							<div class="details">
-								<header>Sunset</header>
-								<p>Интернет-магазин с личным кабинетом</p>
-								<a class="btn" href="#">10000 р.</a>
-							</div>
-						</article>
-						<article class="item">
-							<div class="details">
-								<header>Forte</header>
-								<p>Отличный макет для личного блога</p>
-								<a class="btn" href="#">5000 р.</a>
-							</div>
-						</article>
-						<article class="item">
-							<div class="details">
-								<header>Modern Organic Thai</header>
-								<p>Сайт для ресторана быстрого питания</p>
-								<a class="btn" href="#">12000 р.</a>
-							</div>
-						</article>
-						<article class="item">
-							<div class="details">
-								<header>Avenue</header>
-								<p>Макет для блога о путешествиях</p>
-								<a class="btn" href="#">8000 р.</a>
-							</div>
-						</article>
-						<article class="item">
-							<div class="details">
-								<header>Dovetail</header>
-								<p>Интернет-магазин с галереей товаров</p>
-								<a class="btn" href="#">14000 р.</a>
-							</div>
-						</article>
-					</div>
-					<div class="paginator">
-						<a class="current" href="#">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a class="next" href="#">Следующая</a>
-					</div>
-				</div>
-		</main>	
-		<div class="map" id="googleMap"></div>
-		<footer class="main-footer">
-			<div class="container clearfix">
-				<section class="contacts">
-						<h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-						<p class="contacts-address">191186, Санкт-Петербург,
-						ул. Б. Конюшенная,д. 19/8</p>
-						<p class="contacts-tel">тел. +7 (812) 275-75-75S</p>
-						<a class="btn" href="#" >Напишите нам</a>
-				</section>	
-				<section class="footer-social">
-					<a class="social-btn social-btn-vk" href="#"></a>
-					<a class="social-btn social-btn-fb" href="#"></a>
-					<a class="social-btn social-btn-insta" href="#"></a>
-				</section>
-				<section class="footer-promo">
-					<b>Давайте дружить, это выгодно!</b>
-					<p>Скидка 10% для друзей из социальных сетей</p>
-				</section>
+			<div class="header-2">
+				<h1 class="header-title">Добро пожаловать в магазин<br>
+					готовых макетов</h1>
 			</div>
-		</footer>
-		<div class="modal-content">
-			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-			<form class="send-email" action="#" method="post">
-				<label class="label-name">Ваше имя:<br><input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
-				<label class="label-email">Ваш e-mail:<br><input type="text" name="email" placeholder="Для отправки ответа"></label>
-				<label class="label-text-email">Текст письма:<br><textarea name="text-email" placeholder="В свободной форме"></textarea></label>
-				<button class="btn" type="submit" name="send">Отправить</button>
-			</form>
 		</div>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxss__mWdjtvtyhP6IRubpZklXCcOryVs"></script>
-		<script src="js/popup.js"></script>
-		<script src="js/map.js"></script>
-	</body>
+	</header>
+	<main class="container clearfix">
+		<form class="filters" action="#" method="get">
+			<fieldset class="cost">
+				<legend class="filters-title">Стоимость:</legend>
+				<div class="cost-range">
+					<div class="min-range"></div>
+					<input type="range" name="cost-range" min="0" max="15000" step="100">
+					<div class="input-range"></div>
+					<div class="max-range"></div>
+				</div>
+				<p>ОТ<output name="cost-from">0</output>ДО<output name="cost-to">15000</output></p>
+			</fieldset>
+			<fieldset class="grid">
+				<legend class="filters-title">Сетка:</legend>
+				<ul class="grid-radio-list">
+					<li>
+						<input name="grid" type="radio" value="adaptive" id="grid-1">
+						<label for="grid-1">Адаптивная</label>
+					</li>
+					<li>
+						<input name="grid" type="radio" value="fixed" id="grid-2">
+						<label for="grid-2">Фиксированная</label>
+					</li>
+					<li>
+						<input name="grid" type="radio" value="rubber" id="grid-3">
+						<label for="grid-3">Резиновая</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="features">
+				<legend class="filters-title">Особенности:</legend>
+				<ul class="grid-features-list">
+					<li>
+						<input name="features" type="checkbox" value="slider" id="slider">
+						<label for="slider">Слайдер</label>
+					</li>
+					<li>
+						<input name="features" type="checkbox" value="features-block" id="features-block">
+						<label for="features-block">Блок преимуществ</label>
+					</li>
+					<li>
+						<input name="features" type="checkbox" value="news" id="news">
+						<label for="news">Новости</label>
+					</li>
+					<li>
+						<input name="features" type="checkbox" value="gallery" id="gallery">
+						<label for="gallery">Галерея</label>
+					</li>
+					<li>
+						<input name="features" type="checkbox" value="cart" id="cart">
+						<label for="cart">Корзина</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button type="submit" name="show-filters" title="Показать">Показать</button>
+		</form>
+		<div class="items">
+			<div class="sort">
+				<h2 class="sort-title">Сортировать:</h2>
+				<ul class="sort-list">
+					<li>
+						<a class="sort-type" href="#">По цене</a>
+					</li>
+					<li>
+						<a class="sort-type" href="#">По типу</a>
+					</li>
+					<li>
+						<a class="sort-type" href="#">По функционалу</a>
+					</li>
+				</ul>
+				<span class="arrow arrow-up"></span>
+				<span class="arrow arrow-down"></span>
+			</div>
+			<div class="items-list clearfix">
+				<article class="item">
+					<div class="details">
+						<header>Aviator</header>
+						<p>Одностраничный макет с авторским дизайном</p>
+						<a class="btn" href="#">8000 р.</a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="details">
+						<header>Sunset</header>
+						<p>Интернет-магазин с личным кабинетом</p>
+						<a class="btn" href="#">10000 р.</a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="details">
+						<header>Forte</header>
+						<p>Отличный макет для личного блога</p>
+						<a class="btn" href="#">5000 р.</a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="details">
+						<header>Modern Organic Thai</header>
+						<p>Сайт для ресторана быстрого питания</p>
+						<a class="btn" href="#">12000 р.</a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="details">
+						<header>Avenue</header>
+						<p>Макет для блога о путешествиях</p>
+						<a class="btn" href="#">8000 р.</a>
+					</div>
+				</article>
+				<article class="item">
+					<div class="details">
+						<header>Dovetail</header>
+						<p>Интернет-магазин с галереей товаров</p>
+						<a class="btn" href="#">14000 р.</a>
+					</div>
+				</article>
+			</div>
+			<div class="paginator">
+				<a class="current" href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a class="next" href="#">Следующая</a>
+			</div>
+		</div>
+	</main>
+	<div class="map" id="googleMap"></div>
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="contacts">
+				<h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+				<p class="contacts-address">191186, Санкт-Петербург,
+					ул. Б. Конюшенная,д. 19/8</p>
+				<p class="contacts-tel">тел. +7 (812) 275-75-75S</p>
+				<a class="btn" href="#">Напишите нам</a>
+			</section>
+			<section class="footer-social">
+				<a class="social-btn social-btn-vk" href="#"></a>
+				<a class="social-btn social-btn-fb" href="#"></a>
+				<a class="social-btn social-btn-insta" href="#"></a>
+			</section>
+			<section class="footer-promo">
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей</p>
+			</section>
+		</div>
+	</footer>
+	<div class="modal-content">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<form class="send-email" action="#" method="post">
+			<label class="label-name">Ваше имя:<br><input type="text" name="name"
+					placeholder="Представьтесь, пожалуйста"></label>
+			<label class="label-email">Ваш e-mail:<br><input type="text" name="email"
+					placeholder="Для отправки ответа"></label>
+			<label class="label-text-email">Текст письма:<br><textarea name="text-email"
+					placeholder="В свободной форме"></textarea></label>
+			<button class="btn" type="submit" name="send">Отправить</button>
+		</form>
+	</div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxss__mWdjtvtyhP6IRubpZklXCcOryVs"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/map.js"></script>
+</body>
+
 </html>

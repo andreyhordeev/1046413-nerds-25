@@ -1,2 +1,75 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Магазин готовых шаблонов</title>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/icons/nerds-logo.svg" width="160" height="65" alt="Логотип Nёrds design studio">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="#">Студия</a></li>
+				<li><a href="#">Клиенты</a></li>
+				<li><a href="#">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li class="shopping cart"><a href="#">Корзина</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<section class="intro">
+			<h1 class="header-title">Магазин готовых шаблонов</h1>
+		</section>
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form action="#" method="post">
+			<!-- Здесь будет форма -->
+				<h3 class="filters-title">Сетка:</h3>
+				<ul class="filters-list">
+					<li><label><input type="radio" name="network" value="Адаптивная" checked>Адаптивная</label></li>
+					<li><label><input type="radio" name="network" value="Фиксированная">Фиксированная</label></li>
+					<li><label><input type="radio" name="network" value="Резиновая">Резиновая</label></li>
+				</ul>
+				<h3 class="filters-title">Особенности:</h3>
+				<ul class="filters-list">
+					<li><label> <input type="checkbox" name="features" checked> Слайдер</label></li>
+					<li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
+					<li><label><input type="checkbox" name="features" checked>Новости</label></li>
+					<li><label><input type="checkbox" name="features">Галерея</label></li>
+					<li><label><input type="checkbox" name="features">Корзина</label></li>
+				</ul>
+				<input type="submit" value="Показать">
+			<!-- Кнопка -->
+			</form>
+		</section>
+		<section class="catalog">
+			<ul class="catalog-list">
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Borodinski"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт игрушек"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт для учебы"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт для КВАСТ"></a></li>
+			</ul>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="footer-social">
+			<ul>
+				<li><a class="social-button" href="#">Вконтакте</a></li>
+				<li><a class="social-button" href="#">Фейсбук</a></li>
+				<li><a class="social-button" href="#">Инстаграм</a></li>
+			</ul>
+		</div>
+		<div class="footer-sale">
+			<p><b>Давайте дружить, это выгодно!</b></p>
+			<p>Сидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</footer>
+</body>
+</html>

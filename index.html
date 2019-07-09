@@ -1,74 +1,196 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<title>Дизайн-студия «Нёрдс»</title>
+    <title>Веб-студия "Nerds"</title>
+    <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic" rel='stylesheet' type='text/css'>
 </head>
 <body>
-<header class="main-header">
-<nav class="main-navigation">
-<a class="main-header-logo">
-<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии "Nerds""
-</a>
-<ul class="site-navigation">
-<li><a href="studio.html">Студия</a></li>
-<li><a href="clients.html">Клиенты</a></li>
-<li><a href="catalog.html">Магазин</a></li>
-<li><a href="contacts.html">Контакты</a></li>
-</ul>
-<ul class="user-navigation">
-<li class="shopping cart">Корзина</li>
-</ul>
-</nav>
-</header>
-<main class="page-main">
-<section class="intro">
-<!--Здесь будет размещен слайдер-->
-</section>
-<h1 class="visually-hidden"> «Дизайн-студия Нёрдс»</h1>
-<section class="catalog-services">
-<h2 class="visually-hidden">Услуги</h2>
-<ul class="catalog-list">
-<li class="catalog-item"></li>
-<a href="#" class="catalog-item-image">
-<img src="img\illustration-1.jpg" width="300" height="146" alt="Веб-сайты" >
-</a>
-<h3 class="catalog-item-title">Веб-сайты</h3>
-<p class="catalog-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-<a class="button-red button-item" href="#">Заказать</a>
-</li>
-<li class="catalog-item">
- <a href="#" class="catalog-item-image">   
-<img src="img\illustration-2.jpg" width="300" height="146" alt="Приложения">
-</a>
-<h3 class="catalog-item-title">Приложения</h3>
-<p class="catalog-item-description">Покорите топ-10 приложений в AppStore и Google Play<p>
-<a class="button-green button-item" href="#">Заказать</a>
-</li>
-<li class="catalog-item">
-<a href="#" class="catalog-item-image">
-<img src="img\illustration-3.jpg" width="300" height"146" alt="Презентации">
-</a>
-<h3 class="catalog-item-title">Презентация</h3>
-<p catalog-item-description>Вы даже не подозреваете, насколько вы изумительны!</p>
-<a class="button-yellow button-item" href="#">Заказать</a>
-</li>
-</ul>
-</section>
-</main>
-<form action="#" method="get">
-<input type="text" id="name" name="name"   value="Ваше имя:"  placeholder="Имя Фамилия"
-</form>
-</main>
-<footer class="main-footer">
-<ul>
-<li><a class="social-button" href="#">Вконтакте</a></li>
-<li><a class="social-button" href="#">Фейсбук</a></li>
-<li><a class="social-button" href="#">Инстаграм</a></li>
-</ul>
-
-<p><b>Давайте дружить, это выгодно!</b></p>
-<p>Скидка 10% для друзей из социальных сетей</p>!
-</footer>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-1 clearfix">
+                <div class="main-logo">
+                    <img src="img/main-logo.png" alt="Веб-студия Nёrds" height="56" width="140">
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Студия</a>
+                        </li>
+                        <li>
+                            <a href="#">Клиенты</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a class="cart" href="#">Корзина</a>
+                </div>
+            </div>
+            <div class="header-2 slider clearfix">
+                <input checked id="slide-1" name="toggle" type="radio">
+                <input id="slide-2" name="toggle" type="radio">
+                <input id="slide-3" name="toggle" type="radio">
+                <div class="slider-inner">
+                    <div class="slider-slides">
+                        <div class="slide slide-1">
+                            <div class="slide-title">
+                                <b>Долго, дорого, скрупулезно.</b>
+                                <p>Математически выверенный дизайн<br>
+                                для вашего сайта или мобильного
+                                приложения.</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>
+                            <div class="slide-image">
+                                <img src="img/slide-1.png" alt="Компьютер" height="221" width="338">
+                            </div>
+                        </div>
+                        <div class="slide slide-2">
+                            <div class="slide-title">
+                                <b>Любите ли вы математику, как любим ее мы?</b>
+                                <p>Нашим дизайнерам мы удаляем нейроны,
+                                ответственные за креатив, чтобы дать им
+                                возможность все просчитать</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>
+                            <div class="slider-image">
+                                <img src="img/slide-2.png" alt="Калькулятор" height="249" width="230">
+                            </div>
+                        </div>
+                        <div class="slide slide-3">
+                            <div class="slide-title">
+                                <b>Только наркотики,<br>
+                                только хардкор!</b>
+                                <p>Все дизайнерские решения в нашей компании
+                                принимаются под воздействием качественных
+                                галлюциногенов</p>
+                                <a class="btn" href="#">Узнать больше</a>
+                            </div>
+                            <div class="slide-image">
+                                <img src="img/slide-3.png" alt="Робот" height="319"  width="333">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <label for="slide-1"></label> 
+                    <label for="slide-2"></label>
+                    <label for="slide-3"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="services clearfix">
+            <div class="services-item">
+                <img src="img/services-1.jpg" alt="Веб-сайты" height="124"  width="240">
+                <h3>Веб-сайты</h3>
+                <p>Мир никогда не будет прежним после того как увидит ваш
+                сайт!</p>
+                <a class="btn btn-websites" href="#">Заказать</a>
+            </div>
+            <div class="services-item">
+                <img src="img/services-2.jpg" alt="Приложения" height="124" width="240">
+                <h3>Приложения</h3>
+                <p>Покорите топ-10 приложений в AppStore и
+                GooglePlay</p>
+                <a class="btn btn-apps" href="#">Заказать</a>
+            </div>
+            <div class="services-item">
+                <img src="img/services-3.jpg" alt="Презентации" height="124" width="240">
+                <h3>Презентации</h3>
+                <p>Вы даже не представляете, насколько вы
+                изумительны!</p><a class="btn btn-presentations" href="#">Заказать</a>
+            </div>
+        </section>
+        <div class="index-content clearfix">
+            <div class="index-content-left">
+                <p class="tagline">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+                <p class="content-description">Исповедуем принципы минимализма
+                и чистоты. Ставим математический расчет выше креатива. Работаем
+                не покладая рук, как роботы.</p>
+                <h3>Выполняем заказы на разработку:</h3>
+                <ul class="index-content-list">
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложения для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="index-content-right">
+                <div class="index-content-logo">
+                    <img src="img/content-logo.png" alt="Лого Nёrds" height="119" width="240">
+                </div>
+                <div class="content-right-list">
+                    <h3>Как мы работаем:</h3>
+                    <ul class="index-content-list">
+                        <li>С самоотдачей 146%</li>
+                        <li>Соблюдая сроки на 100%</li>
+                        <li>По предоплате 50%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sites-portfolio clearfix">
+            <div class="site">
+                <a class="site-hover" href="#">
+                    <img src="img/site-1.png" alt="Glukhanko" height="37" width="198">
+                </a>
+            </div>
+            <div class="site">
+                <a class="site-hover" href="#">
+                    <img src="img/site-2.png" alt="HtmlAcademy" height="68" width="199">
+                </a>
+            </div>
+            <div class="site">
+                <a class="site-hover" href="#">
+                    <img src="img/site-3.png" alt="Barbershop Borodinski" height="86" width="209">
+                </a>
+            </div>
+        </div>
+    </main>
+    <div class="map" id="googleMap">
+    </div>
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <section class="contacts">
+                <h3 class="contacts-title">Nёrds design studio</h3>
+                <p class="contacts-address">191186, Санкт-Петербург, ул. Б.
+                Конюшенная,д. 19/8</p>
+                <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
+                <a class="btn" href="#">Напишите нам</a>
+            </section>
+            <section class="footer-social">
+                <a class="social-btn social-btn-vk" href="#"></a> 
+                <a class="social-btn social-btn-fb" href="#"></a> 
+                <a class="social-btn social-btn-insta" href="#"></a>
+            </section>
+            <section class="footer-promo">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </section>
+        </div>
+    </footer>
+    <div class="modal-content">
+        <button class="modal-content-close" title="Закрыть" type="button">Закрыть</button>
+        <form action="#" class="send-email" method="post">
+            <label class="label-name">Ваше имя:<br>
+            <input name="name" placeholder="Представьтесь, пожалуйста" type="text"></label>
+            <label class="label-email">Ваш e-mail:<br>
+            <input name="email" placeholder="Для отправки ответа" type="text"></label> 
+            <label class="label-text-email">Текст письма:<br>
+            <textarea name="text-email" placeholder="В свободной форме"></textarea></label>
+            <button class="btn" name="send" type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxss__mWdjtvtyhP6IRubpZklXCcOryVs"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>

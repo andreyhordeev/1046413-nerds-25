@@ -898,6 +898,7 @@ input[type="radio"].visually-hidden {
 .filters-button:hover,
 .filters-button:focus {
 	background-color: #dfdfdf;
+	background-color: 
 }
 .filters-button:active {
 	background-color: #d5d5d5;
